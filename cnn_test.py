@@ -62,6 +62,7 @@ def ShowImg():
     global t_x, t_y, results
 
     t_x, t_y = next(iterator)
+    plt.clf()
     plt.imshow(t_x[0, 0], cmap='gray')
     plt.title('{}'.format(t_y[0]), fontsize=40, color='red')
     plt.xticks([], [])
